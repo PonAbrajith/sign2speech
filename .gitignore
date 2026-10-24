@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+workspace/studio.db
+workspace/calibration.json
+workspace/settings.json
+workspace/dataset/samples/*.csv
+workspace/firmware/

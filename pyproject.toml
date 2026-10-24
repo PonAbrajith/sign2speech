@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sign2speech-v2"
+version = "2.0.0"
+description = "Sign2Speech V2 Studio - Indian Sign Language glove (ESP32, 5 flex sensors, MPU6050, OLED, laptop speech)"
+requires-python = ">=3.11"
+dependencies = ["PySide6>=6.7", "pyserial>=3.5"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+speech = ["pyttsx3>=2.90"]
+
+[project.scripts]
+sign2speech-v2 = "sign2speech_v2.ui.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"sign2speech_v2.codegen" = ["templates/*.tmpl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+markers = ["firmware_compile: compiles the generated firmware with arduino-cli (slow)"]

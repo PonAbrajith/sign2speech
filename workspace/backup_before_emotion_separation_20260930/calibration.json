@@ -1,0 +1,38 @@
+{
+  "fingers": [
+    {
+      "finger": "Thumb",
+      "open": 181,
+      "closed": 1090,
+      "noise": 0.0
+    },
+    {
+      "finger": "Index",
+      "open": 37,
+      "closed": 1183,
+      "noise": 0.0
+    },
+    {
+      "finger": "Middle",
+      "open": 44,
+      "closed": 1132,
+      "noise": 0.0
+    },
+    {
+      "finger": "Ring",
+      "open": 6,
+      "closed": 201,
+      "noise": 0.0
+    },
+    {
+      "finger": "Little",
+      "open": 19,
+      "closed": 807,
+      "noise": 0.0
+    }
+  ],
+  "bend_threshold": 0.5,
+  "hysteresis": 0.08,
+  "captured_at": "",
+  "label": "PRELOADED CALIBRATION"
+}
